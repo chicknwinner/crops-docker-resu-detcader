@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ ! -f /config/settings.json ]; then
+  echo "{}" >/config/settings.json
+fi
+
+echo "Symlinking settings.json..."
+ln -s /config/settings.json /app/settings.json
+
+echo "Starting Crops..."
+trap "echo Shutting down; exit 0" SIGTERM SIGINT SIGKILL
+sleep infinity &
+wait
