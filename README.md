@@ -6,7 +6,7 @@ This is a Dockerized version of [Crops](https://github.com/soranosita/crops).
 
 This image is different in that it holds the container open even when it's not doing anything. This works better for my setup personally.
 
-## Binary
+### Binary
 
 I've added a binary named `crops` inside the image for convenience. So instead of running `python3 main.py -h`, you can just run `crops -h`.
 
