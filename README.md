@@ -14,6 +14,8 @@ I've added a binary named `crops` inside the image for convenience. So instead o
 
 This should be writable by the docker user. It's where your OPS and RED credentials will be stored.
 
+After the container boots for the first time, you'll need to edit the `settings.json` file. You can find a template [here](https://github.com/soranosita/crops/blob/main/src/settings.json)
+
 ### Torrents Directory (important)
 
 This is where your existing torrent files are located.
