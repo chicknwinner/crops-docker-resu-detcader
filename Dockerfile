@@ -2,8 +2,8 @@ FROM python:3.11-slim-buster
 
 ARG uid=1000
 ARG gid=1000
-ARG GITHUB_REPO="soranosita/crops"
-ARG GITHUB_BRANCH="main"
+ARG GITHUB_REPO="resu-detcader/crops"
+ARG GITHUB_BRANCH="latest"
 
 WORKDIR /app
 
